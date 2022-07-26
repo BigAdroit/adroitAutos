@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.negative-m {
+    margin-top: -5rem;
+}
+
+@keyframes example {
+    from {opacity:0.5}
+    to {opacity:1;}
+  }
+  
+  /* The element to apply the animation to */
+  .anim {
+    animation-name: example;
+    animation-duration: 1s;
+  }

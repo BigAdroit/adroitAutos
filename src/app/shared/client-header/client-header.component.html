@@ -1,0 +1,31 @@
+<section class="h-screen py-8 pb-12 bg-[url('assets/img/pexels-mike-b-120049.jpg')] object-cover bg-center bg-cover bg-no-repeat">
+    <div class="container md:mx-auto flex flex-col my-auto px-4 md:justify-between md:flex-row md:py-16 relative"> 
+        <div>
+            <div class="text-white font-bold text-3xl">ADROIT_Autos</div>
+        </div>
+        <div class="bg-sky-500 mt-4 text-white md:flex md:space-x-6 md:bg-transparent p-4 md:p-0 anim" [class.hidden]="hidden"  id="mobile">
+            <div routerLink="" routerLinkActive="bg-green-600" class="cursor-pointer block md:inline font-bold  px-4 rounded" (click)="hidden = true"> Home </div>
+            <div routerLink="/about" routerLinkActive="bg-green-600" class="cursor-pointer block md:inline font-bold  px-4 rounded" (click)="hidden = true"> About </div>
+            <div routerLink="/pricing" routerLinkActive="bg-green-600" class="cursor-pointer block md:inline font-bold  px-4 rounded" (click)="hidden = true"> Pricing </div>
+            <div routerLink="/car" routerLinkActive="bg-green-600" class="cursor-pointer block md:inline font-bold  px-4 rounded" (click)="hidden = true"> Cars </div>
+            <div routerLink="/contact" routerLinkActive="bg-green-600" class="cursor-pointer block md:inline font-bold  px-4 rounded" (click)="hidden = true"> Contact </div>
+        </div>
+        <div class="absolute right-5 md:hidden" id="hamburger" (click)="hidden = !hidden">
+            <div class="text-4xl font-bold text-white">&#9776;</div>
+        </div>
+    </div>
+   
+    <div class="flex  my-auto flex-col items-center justify-center mt-64">
+        <div class="px-2">
+            <h1 class="text-4xl text-white text-center md:text-center font-bold md:text-5xl">Fast & Easy Way To Rent A Car</h1>
+            <p class=" max-w-md text-center mx-auto mt-8 text-white ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque blanditiis repellendus explicabo soluta ipsam consequatur assumenda tempore necessitatibus quibusdam hic? Perferendis corporis alias ad, quas suscipit nemo ex nobis. Veritatis.</p>
+        </div>
+
+        <div class="hidden md:flex md:flex-row flex-col mt-8 items-center space-x-6">
+            <div class="h-16 bg-green-400 w-16 rounded-full">
+            </div>
+            <div class="h-1 w-16 bg-white mt-2"></div>
+            <div class="text-white text-xl font-bold "> Easy Step for Renting a car </div>
+        </div>
+    </div>
+</section>
